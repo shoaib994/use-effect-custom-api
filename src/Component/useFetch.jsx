@@ -26,7 +26,7 @@ function reducer(state, { type, payload }) {
             loading: false
         };
         case ACTION.ERROR: {
-            console.log("payload", payload)
+           
             return {
                 ...state,
                 loading: false,

@@ -13,8 +13,8 @@ const Main = () => {
         loading && <div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
       }
       {
-        (error && check) && <div style={{ position: 'absolute', zIndex: 1000, top: '50%', left: '50%', width: '250px', height: '100px', backgroundColor: 'white', color: 'black', border: '2px solid black' }}><h3 style={{ margin: '5% auto' }}>something went wrong</h3>
-          <button onClick={() => setCheck(false)}>close</button>
+        (error && check) && <div style={{ position: 'absolute', zIndex: 1000, top: '40%', left: '40%', width: '250px', height: '100px', backgroundColor: 'white', color: 'black', border: '2px solid black' }}><h3 style={{ margin: '5% auto' }}>something went wrong</h3>
+          <button onClick={() => {setCheck(false); window.location.reload()}}>close</button>
         </div>
       }
       {!loading && !error &&
